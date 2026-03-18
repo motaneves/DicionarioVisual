@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #0d0d0d;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.search-area {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #333;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+}
+
+h2 { color: #00ce7c; margin-bottom: 20px; }
+
+input[type="text"] {
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #000;
+    color: white;
+    width: 240px;
+    outline: none;
+}
+
+button {
+    padding: 15px 25px;
+    background: #00ce7c;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background: #00fa96; }
+
+/* Estilo do Checkbox */
+input[type="checkbox"] {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+label {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Container de Tela Cheia (Mesma Página) */
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.fullscreen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajuste ideal sem cortes */
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
